@@ -11,6 +11,8 @@ import Community from './pages/Community';
 import Explorer from './pages/Explorer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+import i18n from './locales/i18n';
+
 const App = () => {
 
   // Now url

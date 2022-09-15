@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
+
 const Exais = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="container">
-            <p>exais</p>
+            <p>{t('exais')}</p>
         </div>
     );
 }
