@@ -8,7 +8,8 @@ const Footer = ({ status, setStatus }) => {
     const { i18n } = useTranslation();
 
     const [languageOpen, setLanguageOpen] = useState(false);
-console.log(i18n);
+    
+    /** 잘 동작하지 않아 차후 연구 필요 */
     const LanguageMap = i18n.languages.map((data) => (
         <li
             key={data}
