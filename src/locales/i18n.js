@@ -19,7 +19,7 @@ i18n
   .init({
     resources,
     lng: "en",
-    fallbackLng: "en", // detected lng이 불가능 할때 en을 사용하겠다.
+    // fallbackLng: "en", // detected lng이 불가능 할때 en을 사용하겠다.
 
     keySeparator: false, // 'messages.welcome' 와 같은 키 형식의 form을 사용할지 여부
 

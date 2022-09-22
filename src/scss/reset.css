@@ -18,8 +18,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'quickzap', sans-serif;
-    color: #000;
+	font-family: 'roboto', sans-serif;
+    color: #fff;
     font-size: 14px;
 	-webkit-user-select:none;
     -moz-user-select:none;
@@ -34,8 +34,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: #07071C ;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {

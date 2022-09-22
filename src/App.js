@@ -13,7 +13,11 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import i18n from './locales/i18n';
 
+import { useTranslation } from 'react-i18next';
+
 const App = () => {
+
+  const { t, i18n } = useTranslation();
 
   // Now url
   const location = useLocation();
