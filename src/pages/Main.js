@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import "../scss/main.scss";
 
 const Main = () => {
@@ -7,15 +8,13 @@ const Main = () => {
             <div className="main_box1">
                 <div className="main_box1_inner">
                     <p>
-                        Building a Web 3.0<br />
-                        Blockchain Service
+                        {t('main_title')}
                     </p>
                     <p>
-                        Metaverse, NFT Market, Studio..<br />
-                        Create for All
+                        {t('main_description')}
                     </p>
                     <div className="arrow_button">
-                        <p>WHITE Paper</p>
+                        <p>{t('white_paper')}</p>
                         <div className="button_arrow"></div>
                     </div>
                 </div>
@@ -24,10 +23,10 @@ const Main = () => {
             <div className="main_box2">
                 <div className="main_box2_inner">
                     <div className="content_box">
-                        <p className="title">The fastest Growing Ecosystem</p>
-                        <p className="description">EXAIS is the fastest blockchain in the world and the fastest growing ecosystem in crypto, with thousands of projects spanning DeFi, NFTs, Web3 and more.</p>
+                        <p className="title">{t('main_box1_title')}</p>
+                        <p className="description">{t('main_box1_description')}</p>
                         <div className="normal_button">
-                            <p>Explorer Ecosystem</p>
+                            <p>{t('main_box1_button')}</p>
                         </div>
                     </div>
                     <div className="image"></div>
@@ -38,10 +37,10 @@ const Main = () => {
                 <div className="main_box3_inner">
                     <div className="image"></div>
                     <div className="content_box">
-                        <p className="title">Let’s Build the Web 3.0 Ecosystem Together</p>
-                        <p className="description">EXAIS Foundation is here to help bring your ideas into reality on the EXAIS network.</p>
+                        <p className="title">{t('main_box2_title')}</p>
+                        <p className="description">{t('main_box2_description')}</p>
                         <div className="normal_button">
-                            <p>Contact Us</p>
+                            <p>{t('main_box2_button')}</p>
                         </div>
                     </div>
                 </div>

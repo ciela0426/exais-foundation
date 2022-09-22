@@ -4,5 +4,17 @@
     "exa_foundation" : "EXA 재단",
     "community" : "커뮤니티",
     "ecosystem" : "생태계",
-    "explorer" : "익스플로러"
+    "explorer" : "익스플로러",
+    "privacy_policy" : "개인정보보호 정책",
+    "contact" : "문의하기",
+
+    "main_title" : "웹 3.0 블록체인 서비스를\n만들어 나갑니다.",
+    "main_description" : "메타버스, NFT 마켓플레이스, 스튜디오\n모두를 위한 창작",
+    "white_paper" : "백서",
+    "main_box1_title" : "가장 빠르게 성장하고 있는\n생태계",
+    "main_box1_description" : "EXAIS는 DeFi, NFT, Web3 등을 아우르는 수천 개의 프로젝트가 있는 세계에서 가장 빠른 블록체인이자 암호화폐 분야에서 가장 빠르게 성장하는 생태계입니다.",
+    "main_box1_button" : "생태계 확인하기",
+    "main_box2_title" : "웹 3.0 생태계를 함께\n만들어 갑니다.",
+    "main_box2_description" : "EXAIS Foundation은 EAXIS 네트워크에서 아이디어를 현실로 구현하도록 돕습니다.",
+    "main_box2_button" : "문의하기"
 }

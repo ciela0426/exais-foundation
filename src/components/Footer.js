@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import '../scss/footer.scss';
 import { useState } from 'react';
+import { t } from 'i18next';
 
 const Footer = ({ status, setStatus }) => {
     const { i18n } = useTranslation();
@@ -41,9 +42,9 @@ const Footer = ({ status, setStatus }) => {
                             }}
                             to={"/privacypolicy"}
                         >
-                            Privacy Policy
+                            {t('privacy_policy')}
                         </Link>
-                        <a href='mailto:soo@nextor.ai;'>Contact</a>
+                        <a href='mailto:soo@nextor.ai;'>{t('contact')}</a>
                     </div>
                     <p className="copyright">EXAIS is Foundation 2022. All rights reserved.</p>
                 </div>

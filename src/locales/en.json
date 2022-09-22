@@ -4,5 +4,17 @@
     "exa_foundation" : "EXA Foundation",
     "community" : "Community",
     "ecosystem" : "Ecosystem",
-    "explorer" : "Explorer"
-}
+    "explorer" : "Explorer",
+    "privacy_policy" : "Privacy policy",
+    "contact" : "Contact",
+
+    "main_title" : "Building a Web 3.0\nBlockchain Service",
+    "main_description" : "Metaverse, NFT Market, Studio..\nCreate for All",
+    "white_paper" : "WHITE Paper",
+    "main_box1_title" : "The fastest Growing\nEcosystem",
+    "main_box1_description" : "EXAIS is the fastest blockchain in the world and the fastest growing ecosystem in crypto, with thousands of projects spanning DeFi, NFTs, Web3 and more.",
+    "main_box1_button" : "Explorer Ecosystem",
+    "main_box2_title" : "Let’s Build the Web 3.0\nEcosystem Together",
+    "main_box2_description" : "EXAIS Foundation is here to help bring your ideas into reality on the EAXIS network.",
+    "main_box2_button" : "Contact Us"
+ }
