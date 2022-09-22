@@ -90,13 +90,13 @@
 }
 
 .arrow_button {
-    width: 200px;
-    height: 60px;
+    padding: 20px 32px;
     border-radius: 100px;
     border: 2px solid #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     cursor: pointer;
     > p {
         font-size: 18px;
@@ -113,7 +113,6 @@
         background-size: contain;
     }
     &:hover {
-        border: none;
         background: #FFF;
         > p {
             color: #000;
@@ -126,18 +125,20 @@
 }
 
 .normal_button {
-    width: 200px;
-    height: 40px;
+    position: absolute;
+    padding: 12px 32px;
     border-radius: 100px;
     background: #6E46C7;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     cursor: pointer;
     > p {
         font-size: 15px;
         font-weight: 400;
         color: #FFF;
+        
     }
     &:hover {
         background: #9F78F8;
