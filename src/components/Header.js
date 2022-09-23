@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 const Header = ({ title, location, status, setStatus }) => {
     
     const { t, i18n } = useTranslation();
+
+    const [gnbOpen, setGnbOpen] = useState(false);
 
     const navMap = title.map((data) => (
         <li
@@ -27,7 +30,7 @@ const Header = ({ title, location, status, setStatus }) => {
     ));
 
     return (
-        <header>
+        <div className='header'>
             {/* logo */}
             <Link
                 onClick={() => {
@@ -39,11 +42,18 @@ const Header = ({ title, location, status, setStatus }) => {
             </Link>
             {/* gnb */}
             <div id="gnb">
-                <ul className="gnb_box">
+                <div className={gnbOpen ? "gnb_mobile_button on" : "gnb_mobile_button"}
+                    onClick={() => {
+                        setGnbOpen(!gnbOpen);
+                    }}
+                >
+                    <div className="gnb_mobile_button_bar"></div>
+                </div>
+                <ul className={gnbOpen ? "gnb_box on" : "gnb_box"}>
                     {navMap}
                 </ul>
             </div>
-        </header>
+        </div>
     );
 }
 

@@ -1,6 +1,8 @@
 // footer.scss
 
 .footer {
+    // z-index: 50;
+    position: relative;
     margin-top: 150px;
     width: 100%;
     height: 125px;
@@ -24,7 +26,7 @@
             > .footer_box1_inner {
                 display: flex;
                 flex-flow: row wrap;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
                 > a {
                     font-size: 15px;
                     font-weight: 400;
@@ -159,5 +161,48 @@
 @media (max-width: 1170px) {
     .footer {
         padding: 0 5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        height: 170px;
+        padding: 0 15px;
+        
+        > .footer_inner { 
+            width: 100%;
+            align-items:flex-start;
+            padding-top: 30px;
+
+            > .footer_box1 {
+                > .footer_box1_inner {
+                    margin-bottom: 0;
+                    > a {
+                        &:nth-of-type(1) {
+                            padding-right: 15px;
+                            margin-right: 15px;
+                        }
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                }
+                > .copyright {
+                    position: absolute;
+                    bottom: 25px;
+                }
+            }
+            > .footer_box2 {
+                > .sns_box {
+                    position: absolute;
+                    left: 15px;
+                    bottom: 55px;
+                    > div {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
     }
 }
