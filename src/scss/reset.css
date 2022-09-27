@@ -1,7 +1,7 @@
 /* font */
 @font-face{
 	font-family: 'roboto';
-	src: url(../assets/fonts/roboto.ttf);
+	src: url(../assets/fonts/roboto.ttf) format(ttf);
 }
 
 /* reset.css */
