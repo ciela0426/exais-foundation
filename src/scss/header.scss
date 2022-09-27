@@ -96,6 +96,7 @@
             height: 100%;
 
             > .blur_box {
+                z-index: 50;
                 position: fixed;
                 top: 0;
                 right: 0;
@@ -117,7 +118,7 @@
             }
             
             > .gnb_mobile_button {
-                z-index: 50;
+                z-index: 55;
                 position: relative;
                 padding: 11px 3px;
                 box-sizing: border-box;
@@ -164,7 +165,7 @@
             
             
             > .gnb_box {
-                z-index: 40;
+                z-index: 50;
                 display: none;
                 position: absolute;
                 top: 0;
