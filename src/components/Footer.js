@@ -31,7 +31,7 @@ const Footer = ({ status, setStatus }) => {
     ));
 
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer_inner">
                 
                 <div className="footer_box1">
@@ -111,7 +111,7 @@ const Footer = ({ status, setStatus }) => {
                 </div>
                 
             </div>
-        </div>
+        </footer>
     );
 }
 

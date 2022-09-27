@@ -35,7 +35,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
     // }, [gnbOpen]);
 
     return (
-        <div className={gnbOpen ? "header on" : "header"}>
+        <header className={gnbOpen ? "header on" : "header"}>
             
             {/* logo */}
             <Link
@@ -62,7 +62,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
                     {navMap}
                 </ul>
             </div>
-        </div>
+        </header>
     );
 }
 
