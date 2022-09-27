@@ -52,17 +52,17 @@ const Footer = ({ status, setStatus }) => {
                 <div className="footer_box2">
                     {/* SNS */}
                     <div className="sns_box">
-                        <div className="telegram" onClick={() => {
-                            window.open('https://telegram.org/');
-                        }}></div>
                         <div className="medium" onClick={() => {
                             window.open('https://www.medium.com');
                         }}></div>
-                        <div className="twitter" onClick={() => {
-                            window.open('https://twitter.com/');
+                        <div className="telegram" onClick={() => {
+                            window.open('https://telegram.org/');
                         }}></div>
                         <div className="discord" onClick={() => {
                             window.open('https://www.discord.com');
+                        }}></div>
+                        <div className="twitter" onClick={() => {
+                            window.open('https://twitter.com/');
                         }}></div>
                     </div>
 

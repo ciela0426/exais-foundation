@@ -34,14 +34,25 @@ const App = () => {
   // Now page
   const [status, setStatus] = useState("Home");
 
+  // popup시 뒷 배경 스크롤 방지
+  const handleScroll = (value) => {
+    if (value === true) {
+        document.body.style.overflow = "hidden";
+    } else if (value === false) {
+        document.body.style.overflow = "unset";
+    } else {
+        return false;
+    }
+  }
+
   return (
     <div className="App">
       {/* header */}
-      <Header title={title} location={location.pathname} status={status} setStatus={setStatus} />
+      <Header title={title} location={location.pathname} status={status} setStatus={setStatus} handleScroll={handleScroll} />
       {/* //header */}
       {/* container */}
         <Routes>
-          <Route path="/" element={<Main />}/>
+        <Route path="/" element={<Main />}/>
           <Route path="/exais" element={<Exais />}/>
           <Route path="/exafoundation" element={<ExaFoundation />}/>
           <Route path="/ecosystem" element={<Ecosystem />}/>

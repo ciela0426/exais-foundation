@@ -71,14 +71,6 @@
                     margin-right: 20px;
                     cursor: pointer;
                 }
-                > .telegram {
-                    background: url(../assets/images/telegram.png) no-repeat 50% 50%;
-                    background-size: contain;
-                    &:hover {
-                        background: url(../assets/images/telegram_w.png) no-repeat 50% 50%;
-                        background-size: contain;
-                    }
-                }
                 > .medium {
                     background: url(../assets/images/medium.png) no-repeat 50% 50%;
                     background-size: contain;
@@ -87,23 +79,33 @@
                         background-size: contain;
                     }
                 }
-                > .twitter {
-                    background: url(../assets/images/twitter.png) no-repeat 50% 50%;
+                > .telegram {
+                    background: url(../assets/images/telegram.png) no-repeat 50% 50%;
                     background-size: contain;
                     &:hover {
-                        background: url(../assets/images/twitter_w.png) no-repeat 50% 50%;
+                        background: url(../assets/images/telegram_w.png) no-repeat 50% 50%;
                         background-size: contain;
                     }
                 }
                 > .discord {
                     background: url(../assets/images/discord.png) no-repeat 50% 50%;
                     background-size: contain;
-                    margin-right: 0;
+                    
                     &:hover {
                         background: url(../assets/images/discord_w.png) no-repeat 50% 50%;
                         background-size: contain;
                     }
                 }
+                > .twitter {
+                    background: url(../assets/images/twitter.png) no-repeat 50% 50%;
+                    background-size: contain;
+                    margin-right: 0;
+                    &:hover {
+                        background: url(../assets/images/twitter_w.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                
             }
             > .language_box {
                 position: relative;
@@ -130,7 +132,7 @@
                 > .language_box_inner {
                     display: none;
                     position: absolute;
-                    top: -80px;
+                    top: -95 px;
                     background: #1C1C3C;
                     padding: 15px;
                     border-radius: 10px;

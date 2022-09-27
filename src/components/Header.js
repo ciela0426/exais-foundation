@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
-const Header = ({ title, location, status, setStatus }) => {
+const Header = ({ title, location, status, setStatus, handleScroll }) => {
     
     const { t, i18n } = useTranslation();
 
@@ -29,8 +30,13 @@ const Header = ({ title, location, status, setStatus }) => {
         </li>
     ));
 
+    // useEffect(() => {
+    //     handleScroll(gnbOpen);
+    // }, [gnbOpen]);
+
     return (
-        <div className='header'>
+        <div className={gnbOpen ? "header on" : "header"}>
+            
             {/* logo */}
             <Link
                 onClick={() => {
@@ -41,7 +47,10 @@ const Header = ({ title, location, status, setStatus }) => {
                 <div className="logo_box" ></div>
             </Link>
             {/* gnb */}
-            <div id="gnb">
+            <div className="gnb">
+                {gnbOpen ? (
+                    <div className='blur_box'></div>
+                ) : null}
                 <div className={gnbOpen ? "gnb_mobile_button on" : "gnb_mobile_button"}
                     onClick={() => {
                         setGnbOpen(!gnbOpen);
