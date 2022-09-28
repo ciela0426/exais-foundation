@@ -17,6 +17,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
             <Link
                 onClick={() => {
                     setStatus(data.title);
+                    setGnbOpen(false);
                 }}
                 to={data.link}
             >
