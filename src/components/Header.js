@@ -61,6 +61,9 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
                 </div>
                 <ul className={gnbOpen ? "gnb_box on" : "gnb_box"}>
                     {navMap}
+                    <li className='wallet'>
+                        Wallet
+                    </li>
                 </ul>
             </div>
         </header>
