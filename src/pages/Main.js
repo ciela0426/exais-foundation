@@ -1,6 +1,8 @@
 import { t } from "i18next";
 import "../scss/main.scss";
 
+import NormalButton from "../components/NormalButton.js";
+
 const Main = () => {
     return (
         <div className="container">
@@ -25,9 +27,7 @@ const Main = () => {
                     <div className="content_box">
                         <p className="title">{t('main_box1_title')}</p>
                         <p className="description">{t('main_box1_description')}</p>
-                        <div className="normal_button">
-                            <p>{t('main_box1_button')}</p>
-                        </div>
+                        <NormalButton button={t('main_box1_button')} />
                     </div>
                     <div className="image"></div>
                 </div>
@@ -39,9 +39,7 @@ const Main = () => {
                     <div className="content_box">
                         <p className="title">{t('main_box2_title')}</p>
                         <p className="description">{t('main_box2_description')}</p>
-                        <div className="normal_button">
-                            <p>{t('main_box2_button')}</p>
-                        </div>
+                        <NormalButton button={t('main_box2_button')} />
                     </div>
                 </div>
             </div>

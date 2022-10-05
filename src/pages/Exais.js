@@ -3,19 +3,9 @@ import { useTranslation } from 'react-i18next';
 import Content2Box from '../components/exais/Content2Box';
 import Content3Box from '../components/exais/Content3Box';
 import Content4Inner from '../components/exais/Content4Inner';
+import Content5Dot from '../components/exais/Content5Dot';
 
 import "../scss/exais.scss";
-
-const Content5Dot = ({date, description}) => {
-    return (
-        <div className="content5_dot">
-            <div className="content5_dot_box">
-                <p className="date">{date}</p>
-                <p className="description">{description}</p>
-            </div>
-        </div>
-    );
-}
 
 const Exais = () => {
     const { t } = useTranslation();
@@ -93,7 +83,10 @@ const Exais = () => {
             </div>
 
             {/* content6 */}
-            <div className="content6"></div>
+            <div className="content6">
+                <Content2Box title={t('exais_content6_box1_title')} description={t('exais_content6_box1_description')} />
+                <Content2Box title={t('exais_content6_box2_title')} description={t('exais_content6_box2_description')} button={t('exais_content6_box2_button')} arrow={true} />
+            </div>
         </div>
     );
 }

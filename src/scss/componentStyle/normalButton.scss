@@ -1,0 +1,28 @@
+// normalButton.scss
+
+.normal_button {
+    position: absolute;
+    padding: 12px 32px;
+    border-radius: 100px;
+    background: #6E46C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    > p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFF;
+    }
+    > .arrow {
+        width: 7.5px;
+        height: 12px;
+        background: url(../../assets/images/normal_button_arrow.png) no-repeat 50% 50%;
+        background-size: contain;
+        margin-left: 10px;
+    }
+    &:hover {
+        background: #9F78F8;
+    }
+}
