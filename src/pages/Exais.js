@@ -26,12 +26,10 @@ const Exais = () => {
             <div className="content3">
                 <p className="title">{t('exais_content3_title')}</p>
                 <p className="description">{t('exais_content3_description')}</p>
-                <div className="content3_box1">
+                <div className="content3_box">
                     <Content3Box title={t('exais_content3_box1_title')} description={t('exais_content3_box1_description')} subtitle={t('exais_content3_box1_subtitle')} />
                     <Content3Box title={t('exais_content3_box2_title')} description={t('exais_content3_box2_description')} />
                     <Content3Box title={t('exais_content3_box3_title')} description={t('exais_content3_box3_description')} />
-                </div>
-                <div className="content3_box2">
                     <Content3Box title={t('exais_content3_box4_title')} description={t('exais_content3_box4_description')} />
                     <Content3Box title={t('exais_content3_box5_title')} description={t('exais_content3_box5_description')} />
                     <Content3Box title={t('exais_content3_box6_title')} description={t('exais_content3_box6_description')} />
