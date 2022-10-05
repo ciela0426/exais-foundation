@@ -73,6 +73,7 @@ $description-color : #767676;
         flex-flow: column wrap;
         align-items: center;
         margin-bottom: 250px;
+        padding: 0 25px;
         > .title {
             font-style: italic;
             font-size: 36px;
@@ -84,6 +85,8 @@ $description-color : #767676;
             font-weight: 400;
             text-align: center;
             margin-bottom: 65px;
+            color: $description-color;
+            white-space: normal;
         }
 
         > .content3_box {
