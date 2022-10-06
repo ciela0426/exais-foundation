@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import Header from "./components/Header";
@@ -11,12 +11,16 @@ import Community from './pages/Community';
 import Explorer from './pages/Explorer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+// 초기 세팅용으로 지우면 안됩니다.
 import i18n from './locales/i18n';
-
 import { useTranslation } from 'react-i18next';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
 
+  // 초기 세팅용으로 지우면 안됩니다.
   const { t, i18n } = useTranslation();
 
   // Now url
@@ -44,6 +48,10 @@ const App = () => {
         return false;
     }
   }
+
+  useEffect(() => {
+    AOS.init();
+  });
 
   return (
     <div className="App">

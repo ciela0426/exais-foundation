@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const Header = ({ title, location, status, setStatus, handleScroll }) => {
     
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [gnbOpen, setGnbOpen] = useState(false);
 

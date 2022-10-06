@@ -70,8 +70,20 @@ const Exais = () => {
         
                 {/* content5 */}
                 <div className="content5">
-                    <p className="title">{t('exais_content5_title')}</p>
-                    <p className="description">{t('exais_content5_description')}</p>
+                    <p 
+                        className="title"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        {t('exais_content5_title')}
+                    </p>
+                    <p 
+                        className="description"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
+                        {t('exais_content5_description')}
+                    </p>
                     <div className="content5_inner">
                         <Content5Dot date={'’22.09'} description={t(('exais_content5_box1_description'))} />
                         <Content5Dot date={'’22.10'} description={t(('exais_content5_box2_description'))} />
