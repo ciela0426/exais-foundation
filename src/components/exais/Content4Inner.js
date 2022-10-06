@@ -1,4 +1,5 @@
-const Content4Inner = ({title, title1, value1, title2, value2, title3, value3, title4, value4, title5, value5}) => {
+const Content4Inner = ({ title, title1, value1, title2, value2, title3, value3, title4, value4, title5, value5 }) => {
+    
     return (
         <div
             className="content4_inner"
