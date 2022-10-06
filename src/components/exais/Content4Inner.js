@@ -1,6 +1,10 @@
 const Content4Inner = ({title, title1, value1, title2, value2, title3, value3, title4, value4, title5, value5}) => {
     return (
-        <div className="content4_inner">
+        <div
+            className="content4_inner"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+        >
             <p className="title">{title}</p>
             <div className="content4_inner_inner">
                 <Content4InnerBox title={title1} value={value1} />
@@ -15,7 +19,11 @@ const Content4Inner = ({title, title1, value1, title2, value2, title3, value3, t
 
 const Content4InnerBox = ({value, title}) => {
     return (
-        <div className="content4_inner_box">
+        <div
+            className="content4_inner_box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+        >
             <p className="value">{value}</p>
             <p className="title">{title}</p>
         </div>

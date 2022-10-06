@@ -11,24 +11,24 @@ const Footer = ({ status, setStatus }) => {
     const [languageOpen, setLanguageOpen] = useState(false);
     
     /** 잘 동작하지 않아 차후 연구 필요 */
-    const LanguageMap = i18n.languages.map((data) => (
-        <li
-            key={data}
-            className={data === i18n.language ? "on" : ""}
-            onClick={() => {
-                // if (data === "en") {
-                //     i18n.changeLanguage('en');
-                // } else if (data === "ko") {
-                //     i18n.changeLanguage('ko');
-                // } else {
-                //     i18n.changeLanguage('en');
-                // }
-                i18n.changeLanguage('ko');
-            }}
-        >
-            {data === "en" ? "English" : "Korean"}
-        </li>
-    ));
+    // const LanguageMap = i18n.languages.map((data) => (
+    //     <li
+    //         key={data}
+    //         className={data === i18n.language ? "on" : ""}
+    //         onClick={() => {
+    //             // if (data === "en") {
+    //             //     i18n.changeLanguage('en');
+    //             // } else if (data === "ko") {
+    //             //     i18n.changeLanguage('ko');
+    //             // } else {
+    //             //     i18n.changeLanguage('en');
+    //             // }
+    //             i18n.changeLanguage('ko');
+    //         }}
+    //     >
+    //         {data === "en" ? "English" : "Korean"}
+    //     </li>
+    // ));
 
     return (
         <footer className="footer">

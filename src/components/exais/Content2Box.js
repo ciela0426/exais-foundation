@@ -3,7 +3,11 @@ import NormalButton from "../NormalButton";
 const Content2Box = ({ title, description, button, arrow }) => {
     if (button === null || button === undefined) {
         return (
-            <div className="content_box">
+            <div
+                className="content_box"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+            >
                 <div className="image"></div>
                 <div className="content_box_inner">
                     <p className="title">{title}</p>
@@ -13,7 +17,11 @@ const Content2Box = ({ title, description, button, arrow }) => {
         );
     } else {
         return (
-            <div className="content_box">
+            <div
+                className="content_box"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+            >
                 <div className="image"></div>
                 <div className="content_box_inner">
                     <p className="title">{title}</p>
