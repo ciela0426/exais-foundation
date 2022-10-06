@@ -1,4 +1,5 @@
-const Content3Box = ({title, subtitle, description}) => {
+const Content3Box = ({ title, subtitle, description }) => {
+    
     if (subtitle === null || undefined) {
         return (
             <div 

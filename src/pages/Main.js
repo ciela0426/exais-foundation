@@ -5,6 +5,7 @@ import NormalButton from "../components/NormalButton.js";
 
 const Main = () => {
     
+    
     return (
         <div className="container">
             {/* main box 1 */}
