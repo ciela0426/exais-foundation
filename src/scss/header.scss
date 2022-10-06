@@ -28,8 +28,6 @@
     > a {
         > .logo_box {
             z-index: 50;
-            position: relative;
-            display: flex;
             width: 90px;
             height: 30px;
             cursor: pointer;
@@ -40,8 +38,17 @@
     
     > .gnb {
         display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
+
+        > .gnb_mobile_button {
+            display: none;
+        }
+
         > .gnb_box {
+            width: 700px;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -68,21 +75,22 @@
                         color: #9F78F8;
                     }
                 }
-                &:last-of-type {
-                    margin-right: 0;
-                    width: 24px;
-                    height: 24px;
-                    background: url(../assets/images/wallet.png) no-repeat 50% 50%;
-                    background-size: contain;
-                    text-indent: -9999px;
-                    overflow: hidden; 
-                    &:hover,
-                    &.on {
-                        border-bottom: none;
-                        background: url(../assets/images/wallet_hover.png) no-repeat 50% 50%;
-                        background-size: contain;
-                    }
-                }
+            }
+        }
+
+        .wallet {
+            width: 24px;
+            height: 24px;
+            background: url(../assets/images/wallet.png) no-repeat 50% 50%;
+            background-size: contain;
+            text-indent: -9999px;
+            overflow: hidden; 
+            cursor: pointer;
+            &:hover,
+            &.on {
+                border-bottom: none;
+                background: url(../assets/images/wallet_hover.png) no-repeat 50% 50%;
+                background-size: contain;
             }
         }
     }
@@ -104,8 +112,7 @@
             }
         }
         > .gnb {
-            display: flex;
-            align-items: center;
+            flex-flow: row-reverse nowrap;
             height: 100%;
 
             > .blur_box {
@@ -131,6 +138,7 @@
             }
             
             > .gnb_mobile_button {
+                display: block;
                 z-index: 55;
                 position: relative;
                 padding: 11px 3px;
@@ -213,6 +221,9 @@
                         line-height: 60px;
                     }
                 }
+            }
+            .wallet {
+                margin-right: 25px;
             }
         }
     }
