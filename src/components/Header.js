@@ -16,6 +16,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
         >
             <Link
                 onClick={() => {
+                    window.scrollTo(0, 0);
                     setStatus(data.title);
                     setGnbOpen(false);
                 }}
@@ -41,6 +42,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
             {/* logo */}
             <Link
                 onClick={() => {
+                    window.scrollTo(0, 0);
                     setStatus("Home");
                 }}
                 to="/"
