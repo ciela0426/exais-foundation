@@ -1,5 +1,13 @@
 // exais.scss
 
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
 $description-color : #767676;
 
 .container {
@@ -9,6 +17,7 @@ $description-color : #767676;
         height: 700px;
         background: url(../assets/images/exais/content1_bg.png) no-repeat 50% 100%;
         background-size: cover;
+        @include transition(height 2s);
     }
     
     > .container_inner {
@@ -35,6 +44,7 @@ $description-color : #767676;
                     height: 532px;
                     background: url(../assets/images/exais/content2_img1.png) no-repeat 50% 50%;
                     background-size: contain;
+                    @include transition(height 2s);
                 }
                 > .content_box_inner {
                     flex: 1;
@@ -52,6 +62,7 @@ $description-color : #767676;
                         white-space: normal;
                         color: #FFF;
                         margin-bottom: 25px;
+                        @include transition(font-size 2s);
                     }
                     > .description {
                         width: 100%;
@@ -59,6 +70,7 @@ $description-color : #767676;
                         font-weight: 400;
                         color: $description-color;
                         white-space: normal;
+                        @include transition(font-size 2s);
                     }
                 }
                 &:nth-of-type(2) {
@@ -185,6 +197,7 @@ $description-color : #767676;
             > .content4_inner {
                 width: 1170px;
                 margin-bottom: 80px;
+                @include transition(width 2s);
                 > .title {
                     font-size: 36px;
                     font-weight: 700;
@@ -272,6 +285,7 @@ $description-color : #767676;
                         width: 135px;
                         height: 2px;
                         background: #FFF;
+                        @include transition(width 2s);
                     }
                     > .content5_dot_box {
                         width: 250px;
@@ -281,6 +295,7 @@ $description-color : #767676;
                         display: flex;
                         flex-flow: column wrap;
                         align-items: flex-end;
+                        @include transition(right 2s);
                         > .date {
                             font-style: italic;
                             font-size: 24px;
@@ -307,6 +322,7 @@ $description-color : #767676;
                             left: 155px;
                             position: absolute;
                             align-items: flex-start;
+                            @include transition(left 2s);
                             > .description {
                                 text-align: left;
                             }
@@ -544,7 +560,11 @@ $description-color : #767676;
                             width: 36px;
                         }
                         > .content5_dot_box {
+                            width: 115px;
                             right: 55px;
+                            > p {
+                                white-space: normal;
+                            }
                         }
                         &:nth-of-type(2n) {
                             > .content5_dot_box {
