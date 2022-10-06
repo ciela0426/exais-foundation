@@ -47,6 +47,7 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
             >
                 <div className="logo_box" ></div>
             </Link>
+
             {/* gnb */}
             <div className="gnb">
                 {gnbOpen ? (
@@ -59,13 +60,13 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
                 >
                     <div className="gnb_mobile_button_bar"></div>
                 </div>
+                
                 <ul className={gnbOpen ? "gnb_box on" : "gnb_box"}>
                     {navMap}
-                    <li className='wallet'>
-                        Wallet
-                    </li>
                 </ul>
+                <div className="wallet"></div>
             </div>
+            
         </header>
     );
 }
