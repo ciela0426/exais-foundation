@@ -2,6 +2,7 @@ import NormalButton from "../NormalButton";
 
 const Content2Box = ({ title, description, button, arrow }) => {
     
+    
     if (button === null || button === undefined) {
         return (
             <div
