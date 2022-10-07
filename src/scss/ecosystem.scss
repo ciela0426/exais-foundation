@@ -1,0 +1,137 @@
+// ecosystem.scss
+
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
+$description-color : #767676;
+
+.ecosystem_container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    > .content1 {
+        width: calc(100% - 40px);
+        height: 660px;
+        margin: 0 20px;
+        background: url(../assets/images/ecosystem/content1_bg.png) no-repeat 50% 100%;
+        background-size: cover;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 280px;
+        > .content_box {
+            width: 1170px;
+            display: flex;
+            flex-flow: row-reverse nowrap;
+            > .image {
+                position: relative;
+                flex: 1;
+                margin-right: 50px;
+                &::after {
+                    position: absolute;
+                    top: calc(50% - 350px);
+                    left: calc(50% - 350px);
+                    display: block;
+                    content: "";
+                    width: 942px;
+                    height: 561px;
+                    background: url(../assets/images/ecosystem/content1_img1.png) no-repeat 50% 50%;
+                    background-size: contain;
+                }
+            }
+            > .content_box_inner {
+                display: flex;
+                flex: 1;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                justify-content: center;
+                > p {
+                    white-space: normal;
+                }
+                > .title {
+                    font-size: 48px;
+                    font-weight: 700;
+                    font-style: italic;
+                    margin-bottom: 25px;
+                }
+                > .description {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 25px;
+                }
+                > .normal_button {
+                    position: inherit;
+                }
+            }
+        }
+    }
+    > .content2 {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        > div {
+            width: 1170px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            > .image {
+                flex: 1;
+                max-width: 570px;
+                height: 395px;
+                background: url(../assets/images/ecosystem/content2_img1.png) no-repeat 50% 50%;
+                background-size: contain;
+                @include transition(height 2s);
+            }
+            > .content_box_inner {
+                flex: 1;
+                max-width: 570px;
+                height: auto;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                > .title {
+                    width: 100%;
+                    font-size: 48px;
+                    font-weight: 700;
+                    font-style: italic;
+                    white-space: normal;
+                    color: #FFF;
+                    margin-bottom: 25px;
+                    @include transition(font-size 2s);
+                }
+                > .description {
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    color: $description-color;
+                    white-space: normal;
+                    margin-bottom: 25px;
+                    @include transition(font-size 2s);
+                }
+                > .normal_button {
+                    position: inherit;
+                }
+            }
+            &:nth-of-type(2) {
+                flex-flow: row-reverse wrap;
+                > .image {
+                    background: url(../assets/images/ecosystem/content2_img2.png) no-repeat 50% 50%;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
