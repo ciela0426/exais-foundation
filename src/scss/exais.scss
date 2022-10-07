@@ -11,7 +11,7 @@
 
 $description-color : #767676;
 
-.container {
+.exais_container {
     width: 100%;
     > .content1 {
         width: 100%;
@@ -363,7 +363,7 @@ $description-color : #767676;
 }
 
 @media (max-width: 1150px) {
-    .container {
+    .exais_container {
         > .content1 {
             height: 415px;
         }
@@ -466,7 +466,7 @@ $description-color : #767676;
 }
 
 @media (max-width: 680px) {
-    .container {
+    .exais_container {
         > .content1 {
             height: 261px;
         }
