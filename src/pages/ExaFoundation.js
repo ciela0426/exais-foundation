@@ -7,6 +7,7 @@ import "../scss/exaFoundation.scss";
 
 const ExaFoundation = () => {
 
+    
     const { t } = useTranslation();
 
     return (

@@ -1,4 +1,5 @@
-const Content3InnerBox = ({description, name, roll}) => {
+const Content3InnerBox = ({ description, name, roll }) => {
+    
     return (
         <div
             className="content3_inner_box"

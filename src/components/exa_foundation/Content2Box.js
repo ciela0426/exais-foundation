@@ -1,4 +1,5 @@
-const Content2Box = ({description}) => {
+const Content2Box = ({ description }) => {
+    
     return (
         <div
             className="content2_box"
