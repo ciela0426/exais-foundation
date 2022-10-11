@@ -1,0 +1,199 @@
+// exaFoundation.scss
+
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
+
+.exa_foundation_container {
+    width: 100%;
+    .content1 {
+        width: 100%;
+        height: 950px;
+        background: url(../assets/images/exa_foundation/content1_bg.png) no-repeat 50% 100%;
+        background-size: cover;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 55px;
+        > .title {
+            width: 100%;
+            font-size: 48px;
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        > .description,
+        > .description2 {
+            width: 1000px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            text-align: center;
+            white-space: normal;
+        }
+        > .description {
+            margin-bottom: 40px;
+        }
+    }
+
+    .content2 {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 200px;
+        > .content2_box {
+            width: 370px;
+            margin-right: 30px;
+            > .image {
+                width: 370px;
+                height: 284px;
+            }
+            > .description {
+                width: 100%;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+                white-space: normal;
+            }
+            &:nth-of-type(1) {
+                > .image {
+                    background: url(../assets/images/exa_foundation/content2_img1.png) no-repeat 50% 50%;
+                    background-size: contain;
+                }
+            }
+            &:nth-of-type(2) {
+                > .image {
+                    background: url(../assets/images/exa_foundation/content2_img2.png) no-repeat 50% 50%;
+                    background-size: contain;
+                }
+            }
+            &:nth-of-type(3) {
+                margin-right: 0;
+                > .image {
+                    background: url(../assets/images/exa_foundation/content2_img3.png) no-repeat 50% 50%;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
+    .content3 {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        > .title {
+            width: 100%;
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        > .content3_inner {
+            width: 1170px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            > .content3_inner_box {
+                width: 260px;
+                margin: 0 65px 70px 65px;
+                > .img {
+                    position: relative;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 36px;
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    > .img_inner {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #6E46C7;
+                        opacity: 0.8;
+                        border-radius: 36px;
+                        padding: 35px;
+                        box-sizing: border-box;
+                        @include transition(top 1s);
+                        > p {
+                            width: 100%;
+                            white-space: normal;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 26px;
+                        }
+                    }
+                    &:hover {
+                        > .img_inner {
+                            top: 0;
+                        }
+                    }
+                }
+                > .name {
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                > .roll {
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #767676;
+                    text-align: center;
+                }
+                &:nth-of-type(1) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img1.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                &:nth-of-type(2) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img2.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                &:nth-of-type(3) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img3.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                &:nth-of-type(4) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img4.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                &:nth-of-type(5) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img5.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+                &:nth-of-type(6) {
+                    > .img {
+                        background: url(../assets/images/exa_foundation/content3_img6.png) no-repeat 50% 50%;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -25,8 +25,8 @@ const Header = ({ title, location, status, setStatus, handleScroll }) => {
                 {
                     data.title === "Exais 1.0" ? t("exais_1.0") : 
                     data.title === "Exa Foundation" ? t("exa_foundation") : 
-                    data.title === "Ecosystem" ? t("community") : 
-                    data.title === "Community" ? t("ecosystem") :  t("explorer")
+                    data.title === "Ecosystem" ? t("ecosystem") : 
+                    data.title === "Community" ? t("community") :  t("explorer")
                 }
             </Link>
         </li>

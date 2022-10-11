@@ -13,7 +13,7 @@ const Exais = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container">
+        <div className="exais_container">
 
             {/* content1 */}
             <div className="content1"></div>

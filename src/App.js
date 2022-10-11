@@ -11,17 +11,16 @@ import Community from './pages/Community';
 import Explorer from './pages/Explorer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
-// 초기 세팅용으로 지우면 안됩니다.
+// 언어팩 초기 세팅용으로 지우면 안됩니다.
 import i18n from './locales/i18n';
 import { useTranslation } from 'react-i18next';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const App = () => {
 
-  // 초기 세팅용으로 지우면 안됩니다.
+  // 언어팩 초기 세팅용으로 지우면 안됩니다.
   const { t, i18n } = useTranslation();
 
   // Now url

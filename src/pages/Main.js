@@ -5,8 +5,9 @@ import NormalButton from "../components/NormalButton.js";
 
 const Main = () => {
     
+    
     return (
-        <div className="container">
+        <div className="main_container">
             {/* main box 1 */}
             <div className="main_box1">
                 <div className="main_box1_inner">

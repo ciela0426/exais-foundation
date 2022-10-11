@@ -8,8 +8,7 @@
   transition: $x;
 }
 
-
-.container {
+.main_container {
     width: 100%;
     > .main_box1 {
         width: 100%;
@@ -149,7 +148,7 @@
 }
 
 @media (max-width: 1170px) {
-    .container {
+    .main_container {
         > .main_box1 {
             height: 700px;
             padding-bottom: 50px;
@@ -203,7 +202,7 @@
 }
 
 @media (max-width: 1000px) {
-    .container {
+    .main_container {
         > .main_box1 {
             height: 340px;
             padding-bottom: 0;
