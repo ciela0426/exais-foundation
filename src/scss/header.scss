@@ -71,7 +71,7 @@
                 }
                 &:hover,
                 &.on {
-                    border-bottom: 2px solid #9F78F8;
+                    box-shadow: inset 0 -2px 0 #9f78f8;
                     > a {
                         color: #9F78F8;
                     }
