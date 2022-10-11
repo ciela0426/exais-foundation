@@ -14,8 +14,8 @@ const Ecosystem = () => {
                 <Content2Box title={t('ecosystem_content1_title')} description={t('ecosystem_content1_description')} button={t('ecosystem_content1_button')} arrow={true}/>
             </div>
             <div className="content2">
-                <Content2Box title={t('ecosystem_content1_title')} description={t('ecosystem_content1_description')} button={t('ecosystem_content1_button')} arrow={true}/>
-                <Content2Box title={t('ecosystem_content1_title')} description={t('ecosystem_content1_description')} button={t('ecosystem_content1_button')} arrow={true}/>
+                <Content2Box title={t('ecosystem_content2_title')} description={t('ecosystem_content2_description')} button={t('ecosystem_content2_button')} arrow={true}/>
+                <Content2Box title={t('ecosystem_content3_title')} description={t('ecosystem_content3_description')} button={t('ecosystem_content3_button')} arrow={true}/>
             </div>
         </div>
     );
