@@ -8,6 +8,7 @@ import Content5Dot from '../components/exais/Content5Dot';
 import "../scss/exais.scss";
 
 const Exais = () => {
+    
 
     const { t } = useTranslation();
 

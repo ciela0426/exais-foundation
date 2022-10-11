@@ -8,6 +8,7 @@
   transition: $x;
 }
 
+
 $description-color : #767676;
 
 .ecosystem_container {
@@ -65,6 +66,7 @@ $description-color : #767676;
                 > .description {
                     font-size: 18px;
                     font-weight: 400;
+                    line-height: 27px;
                     margin-bottom: 25px;
                 }
                 > .normal_button {
