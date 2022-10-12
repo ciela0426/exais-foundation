@@ -6,7 +6,6 @@ import Content3InnerBox from "../components/exa_foundation/Content3InnerBox";
 import "../scss/exaFoundation.scss";
 
 const ExaFoundation = () => {
-
     
     const { t } = useTranslation();
 
@@ -16,6 +15,7 @@ const ExaFoundation = () => {
                 <p className="title">{t('exa_foundation_title')}</p>
                 <p className="description">{t('exa_foundation_description')}</p>
                 <p className="description2">{t('exa_foundation_description2')}</p>
+                <p className="description3">{t('exa_foundation_description3')}</p>
             </div>
             <div className="content2">
                 <Content2Box description={t('exa_foundation_content1_box1_description')} />

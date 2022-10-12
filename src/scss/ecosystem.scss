@@ -48,7 +48,6 @@ $description-color : #767676;
             width: 1170px;
             display: flex;
             flex-flow: row-reverse nowrap;
-            @include transition(width 2s);
             > .image {
                 position: relative;
                 flex: 1;
@@ -108,7 +107,6 @@ $description-color : #767676;
             flex-flow: row wrap;
             justify-content: space-between;
             margin-bottom: 80px;
-            @include transition(width 2s);
             > .image {
                 flex: 1;
                 max-width: 570px;
