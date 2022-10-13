@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	background: #07071C;
-	white-space: pre;
+	white-space: pre-line;
 	box-sizing: border-box;
 }
 ol, ul, li {
