@@ -4,7 +4,6 @@ import Content2Box from "../components/exais/Content2Box";
 import "../scss/ecosystem.scss";
 
 const Ecosystem = () => {
-    
 
     const { t } = useTranslation();
 
