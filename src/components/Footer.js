@@ -38,6 +38,7 @@ const Footer = ({ status, setStatus }) => {
                     <div className="footer_box1_inner">
                         <Link
                             onClick={() => {
+                                window.scrollTo(0, 0);
                                 setStatus("Privacy Policy");
                             }}
                             to={"/privacypolicy"}

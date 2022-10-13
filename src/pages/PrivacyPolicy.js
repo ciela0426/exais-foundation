@@ -10,8 +10,16 @@ const PrivacyPolicy = () => {
         <div className="pp_container">
             <div className="content1"></div>
             <div className="content2">
-                <p className="title">{t('pp_content2_title')}</p>
-                <p className="description">
+                <p 
+                    className="title"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >{t('pp_content2_title')}</p>
+                <p 
+                    className="description"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
                     {t('pp_content2_description')}
                     <span className="highlight">{t('pp_content2_subtitle1')}</span>
                     {t('pp_content2_subdescription1')}
